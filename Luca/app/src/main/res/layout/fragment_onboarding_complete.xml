@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/spacing_large"
+        tools:context=".ui.MainActivity">
+
+    <TextView
+            android:id="@+id/appNameTextView"
+            style="@style/TextAppearance.App.Headline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textFontWeight="100"
+            android:textSize="48sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:id="@+id/appSloganTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/welcome_app_slogan"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/appNameTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/appNameTextView" />
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/TextAppearance.App.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:text="@string/onboarding_completed_heading"
+            android:textSize="@dimen/font_size_large"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appNameTextView" />
+
+    <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:fadingEdgeLength="@dimen/spacing_large"
+            android:fillViewport="true"
+            android:orientation="vertical"
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintBottom_toTopOf="@id/primaryActionButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headingTextView">
+
+        <TextView
+                android:id="@+id/descriptionTextView"
+                style="@style/TextAppearance.App.Body2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onboarding_completed_description"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/headingTextView" />
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/primaryActionButton"
+            style="@style/PrimaryActionButton"
+            android:layout_margin="0dp"
+            android:text="@string/onboarding_completed_action"
+            tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

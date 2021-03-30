@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="de.culture4life.luca.ui.history.HistoryFragment">
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/HeadingTextView"
+            android:text="@string/navigation_history"
+            app:layout_constraintEnd_toEndOf="@null"
+            app:layout_constraintEnd_toStartOf="@id/accessedDataImageView"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/accessedDataImageView"
+            style="@style/MenuImageView"
+            android:src="@drawable/ic_eye"
+            app:layout_constraintEnd_toEndOf="@null"
+            app:layout_constraintEnd_toStartOf="@id/menuImageView"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/menuImageView"
+            style="@style/MenuImageView"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/headingSeparatorView"
+            style="@style/HeaderSeparatorView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/emptyTitleTextView"
+            style="@style/EmptyStateTitleTextView"
+            android:text="@string/history_empty_title"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/emptyDescriptionTextView"
+            style="@style/EmptyStateDescriptionTextView"
+            android:text="@string/history_empty_description"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/emptyImageView"
+            style="@style/EmptyStateImageView"
+            tools:ignore="MissingConstraints" />
+
+    <ListView
+            android:id="@+id/historyListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdgeLength="@dimen/spacing_large"
+            android:listSelector="@android:color/transparent"
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintBottom_toTopOf="@id/primaryActionButton"
+            app:layout_constraintTop_toBottomOf="@id/headingSeparatorView"
+            tools:listitem="@layout/history_list_item" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/primaryActionButton"
+            style="@style/PrimaryActionButton"
+            android:text="@string/history_share"
+            tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:dist="http://schemas.android.com/apk/distribution"
+        package="de.culture4life.luca"
+        android:targetSandboxVersion="2">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+            android:name="de.culture4life.luca.LucaApplication"
+            android:allowBackup="false"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/ic_launcher_round"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.App.DayNight">
+
+        <activity
+                android:name=".ui.splash.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.App.DayNight.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                        android:scheme="https"
+                        android:host="app.luca-app.de"
+                        android:pathPrefix="/webapp/" />
+
+                <!-- The Play Store is blocking releases that don't support HTTP for web intent-filters -->
+
+                <data
+                        android:scheme="http"
+                        android:host="app.luca-app.de"
+                        android:pathPrefix="/webapp/" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+                android:name=".ui.onboarding.OnboardingActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="de.culture4life.luca.ui.registration.RegistrationActivity"
+                android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+                android:name="de.culture4life.luca.ui.MainActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+
+        </activity>
+
+        <service android:name="de.culture4life.luca.service.LucaService" />
+
+        <receiver android:name=".location.GeofenceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+                android:name="com.google.mlkit.vision.DEPENDENCIES"
+                android:value="barcode" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,253 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="unknown">Unbekannt</string>
+    <string name="feature_unavailable">Demnächst verfügbar</string>
+    <string name="url_terms_and_conditions">https://luca-app.de/app-terms-and-conditions</string>
+    <string name="url_privacy_policy">https://luca-app.de/app-privacy-policy</string>
+    <string name="url_imprint">https://luca-app.de/imprint</string>
+
+    <!-- Actions -->
+    <string name="action_ok">@android:string/ok</string>
+    <string name="action_cancel">@android:string/cancel</string>
+    <string name="action_yes">@android:string/yes</string>
+    <string name="action_no">@android:string/no</string>
+    <string name="action_no_thanks">Nein danke</string>
+    <string name="action_stop">Stopp</string>
+    <string name="action_retry">Wiederholen</string>
+    <string name="action_resolve">Beheben</string>
+    <string name="action_continue">Weiter</string>
+    <string name="action_finish">Fertig</string>
+    <string name="action_grant">@string/action_ok</string>
+    <string name="action_settings">Einstellungen</string>
+    <string name="action_send">Senden</string>
+    <string name="action_confirm">Bestätigen</string>
+    <string name="action_update">Update</string>
+    <string name="action_enable">Aktivieren</string>
+
+    <!-- Errors -->
+    <string name="error_generic_title">Etwas lief schief</string>
+    <string name="error_generic_description">Ein unerwarteter Fehler ist aufgetreten. Bitte kontaktiere uns, sollte das Problem bestehen bleiben.</string>
+    <string name="error_specific_title">Fehler: <xliff:g example="HttpException" id="exceptionType">%1$s</xliff:g></string>
+    <string name="error_specific_description">Ein unerwarteter Fehler ist aufgetreten:\n\n<xliff:g example="Request not authorized, status code 401" id="exceptionMessage">%1$s</xliff:g>\n\nBitte kontaktiere uns, sollte das Problem bestehen bleiben.</string>
+    <string name="error_request_failed_title">Anfrage fehlgeschlagen</string>
+    <string name="error_no_network_connection">Keine Netzwerkverbindung</string>
+    <string name="error_check_in_failed">Check-in fehlgeschlagen</string>
+    <string name="error_location_not_found">Ein Check-in ist hier nicht mehr möglich.</string>
+    <string name="error_qr_code_broken">QR-Code fehlerhaft. Bitte versuche es mit einem anderen.</string>
+    <string name="error_certificate_pinning_title">Unerwartete Server Zertifikate</string>
+    <string name="error_certificate_pinning_description">Wegen nicht vertrauenswürdigen Zertifikaten konnte keine sichere Verbindung zu den luca Servern hergestellt werden.\n\nBitte wechsle dein Netzwerk und vergewissere dich, dass du die aktuellste App Version nutzt.</string>
+
+    <!-- Statuses -->
+    <string name="status_check_out_in_progress">Du wirst ausgecheckt…</string>
+    <string name="status_check_out_succeeded">Check-out erfolgreich</string>
+    <string name="status_check_out_failed">Check-out fehlgeschlagen</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_status_title">Status</string>
+    <string name="notification_channel_status_description">Zeigt den aktuellen Status von luca.</string>
+    <string name="notification_channel_access_title">Datenzugriffe</string>
+    <string name="notification_channel_access_description">Informiert dich, sollte ein Gesundheitsamt im Rahmen der Kontaktnachverfolgung auf deine Daten zugegriffen haben.</string>
+    <string name="notification_channel_event_title">Informationen</string>
+    <string name="notification_channel_event_description">Informiert dich über Events der luca App.</string>
+    <string name="notification_service_title">Eingecheckt</string>
+    <string name="notification_service_description">@string/notification_checked_in_at_description</string>
+    <string name="notification_error_title">luca ist auf ein Promlem gestoßen</string>
+    <string name="notification_checked_in_at_title">Eingecheckt bei <xliff:g example="neXenio" id="companyName">%1$s</xliff:g></string>
+    <string name="notification_checked_in_at_description">Du bist zur Zeit eingecheckt. Bitte vergiss nicht dich auszuchecken, sobald du die Location verlässt.</string>
+    <string name="notification_meeting_host_title">Privates Treffen</string>
+    <string name="notification_meeting_host_description">Du hast ein privates Treffen aktiv. Bitte beende es, sobald deine Gäste gegangen sind.</string>
+    <string name="notification_service_error_title">luca hat Probleme</string>
+    <string name="notification_data_accessed_title">@string/accessed_data_dialog_title</string>
+    <string name="notification_data_accessed_description">Ein Gesundheitsamt hat im Rahmen einer Datenanfrage deine Kontaktdaten erhalten.</string>
+    <string name="notification_auto_checkout_triggered_title">@string/auto_checkout_info_title</string>
+    <string name="notification_auto_checkout_triggered_description">Du hast den Standort verlassen und wurdest darum automatisch ausgecheckt.</string>
+    <string name="notification_action_stop_service">Service stoppen</string>
+    <string name="notification_action_check_out">Auschecken</string>
+    <string name="notification_action_end_meeting">@string/meeting_end_action</string>
+
+    <!-- Welcome -->
+    <string name="welcome_app_slogan">Gemeinsam erleben.</string>
+    <string name="welcome_heading">Hallo</string>
+    <string name="welcome_description">luca hilft dir bei der sicheren und verschlüsselten Angabe deiner Kontaktdaten. Du musst dir keine Sorgen um deine Daten mehr machen, wenn du Veranstaltungen, Kulturstätten, Restaurants, Cafés oder Bars besuchst.</string>
+    <string name="welcome_terms_description"><a href="https://luca-app.de/app-terms-and-conditions">AGB</a> zustimmen</string>
+    <string name="welcome_privacy_description"><a href="https://luca-app.de/app-privacy-policy">Datenschutzbestimmungen</a> zustimmen</string>
+    <string name="welcome_action">Los geht\'s!</string>
+
+    <!-- Pre-Registration -->
+    <string name="pre_registration_heading">Deine Daten</string>
+    <string name="pre_registration_description">Bitte gib im nächsten Schritt deine Kontaktdaten an.\n\nDeine Daten werden verschlüsselt. Nur Gesundheitsämter können sie im Rahmen einer Kontaktnachverfolgung wieder entschlüsseln.</string>
+
+    <!-- Permissions -->
+    <string name="missing_permission_arg">Fehlende %1$s Berechtigung</string>
+    <string name="permission_name_location">Standort</string>
+
+    <!-- Registration -->
+    <string name="registration_first_name">Vorname</string>
+    <string name="registration_last_name">Nachname</string>
+    <string name="registration_street">Straße</string>
+    <string name="registration_house_number">Hausnummer</string>
+    <string name="registration_postal_code">Postleitzahl</string>
+    <string name="registration_city_name">Stadt</string>
+    <string name="registration_phone_number">Telefonnummer</string>
+    <string name="registration_email">E-Mail-Adresse (optional)</string>
+    <string name="registration_heading_name">Wie heißt du?</string>
+    <string name="registration_heading_address">Wo wohnst du?</string>
+    <string name="registration_heading_contact">Wie bist du erreichbar?</string>
+    <string name="registration_missing_info">Angaben fehlen</string>
+    <string name="registration_missing_fields_error_text">Bitte gib deinen Namen, deine Telefonnummer und deine Adresse an. </string>
+    <string name="registration_invalid_value_field_error">Dieses Feld ist ungültig</string>
+    <string name="registration_empty_but_required_field_error">Dieses Feld wird benötigt</string>
+    <string name="registration_address_mandatory">Gastgeber müssen im Rahmen der Kontaktdatenerfassung deine Adresse aufnehmen. Deshalb ist die Angabe der Adresse für die Nutzung von luca verpflichtend.</string>
+    <string name="registration_contact_info">Bitte gib eine korrekte Mobil- oder Festnetznummer an. Die Nummer wird für die Verifizierung verwendet. Du kannst selbst entscheiden, ob du zusätzlich eine E-Mail-Adresse angibst.</string>
+    <string name="registration_address_info">Gastgeber:innen müssen im Rahmen der Kontaktdatenerfassung in der Regel auch deine Adresse aufnehmen. Deshalb ist die Angabe der Adresse für die Nutzung von luca verpflichtend.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_info_heading">Deine Daten</string>
+    <string name="onboarding_info_description">Bitte gib im nächsten Schritt deine Kontaktinformationen an.\n\nDeine Daten werden verschlüsselt. Nur Gesundheitsämter können sie wieder entschlüsseln.</string>
+    <string name="onboarding_info_action">Verstanden</string>
+    <string name="onboarding_completed_heading">Das war\'s schon!</string>
+    <string name="onboarding_completed_description">Du kannst jetzt deine Kontaktdaten verschlüsselt übermitteln. Zeige deinen QR-Code vor oder scanne den Code eines luca-Standorts, der dir gezeigt wird.\n\nCheck-ins sind bei luca-Standorten und bei privaten Treffen mit anderen luca Nutzer:innen möglich.</string>
+    <string name="onboarding_completed_action">Fertig</string>
+
+    <!-- Navigation -->
+    <string name="navigation_check_in">Einchecken</string>
+    <string name="navigation_contact_data">Kontaktdaten</string>
+    <string name="navigation_venue_list">Locations</string>
+    <string name="navigation_venue_details">@string/navigation_venue_list</string>
+    <string name="navigation_history">Historie</string>
+    <string name="navigation_meeting">@string/meeting_heading</string>
+    <string name="navigation_accessed_data">Datenzugriffe</string>
+
+    <!-- Menu -->
+    <string name="menu_contact_data">Kontaktdaten</string>
+    <string name="menu_clear_history">Historie löschen</string>
+    <string name="menu_privacy_policy">Datenschutzbestimmungen</string>
+    <string name="menu_terms_and_conditions">AGB</string>
+    <string name="menu_imprint">Impressum</string>
+    <string name="menu_app_data">App Details</string>
+
+    <!-- Contact Data -->
+    <string name="qr_code_description">Das ist dein QR-Code. Lass ihn an einem luca-Standort scannen, um dich einzuchecken.</string>
+    <string name="scan_qr_code">Selbst einchecken</string>
+    <string name="show_qr_code">Einchecken lassen</string>
+    <string name="edit_contact_data">Kontaktdaten bearbeiten</string>
+
+    <!-- Private Meeting -->
+    <string name="meeting_heading">Privates Treffen</string>
+    <string name="meeting_description">Lass deine Freunde und Familie den QR-Code scannen, um sie bei deinem Treffen einzuchecken.</string>
+    <string name="meeting_description_info">Wenn Freunde und Familie bei deinem privaten Treffen einchecken, werden ihre Vor- und Nachnamen in deiner App angezeigt. Sie sehen in ihrer App auch deinen Vor- und Nachnamen.\n\nUnabhängig vom Gesundheitsamt kannst du diese Funktion jetzt schon an Orten nutzen, die noch nicht Teil des luca-Systems sind, um private Treffen für dich selbst zu dokumentieren.</string>
+    <string name="meeting_duration_heading">Dauer</string>
+    <string name="meeting_members_heading">Teilnehmer</string>
+    <string name="meeting_members_info"><xliff:g example="2/4" id="count">%1$s</xliff:g>\n\nEingecheckt:\n<xliff:g example="- John Doe\n- Jane Doe" id="checkedIn">%2$s</xliff:g>\n\nAusgecheckt:\n<xliff:g example="- John Doe\n- Jane Doe" id="checkedOut">%3$s</xliff:g></string>
+    <string name="meeting_create_action">Privates Treffen erstellen</string>
+    <string name="meeting_create_modal_action">Starten</string>
+    <string name="meeting_create_modal_heading">Privates Treffen erstellen</string>
+    <string name="meeting_create_modal_description">Möchtest du ein privates Treffen starten?\n\nFreunde und Familie erscheinen nach dem Check-in mit ihrem Vor- und Nachnamen in deiner Historie. Sie sehen auch deinen Vor- und Nachnamen in ihrer App.</string>
+    <string name="meeting_end_confirmation_heading">@string/meeting_end_action</string>
+    <string name="meeting_end_confirmation_description">Willst du dieses Treffen wirklich beenden?</string>
+    <string name="meeting_end_action">Treffen beenden</string>
+    <string name="meeting_slider_text">TREFFEN BEENDEN</string>
+
+    <string name="meeting_join_heading">Privates Treffen</string>
+    <string name="meeting_join_description">Wenn du dich bei einem privaten Treffen eincheckst, werden deinem Gastgeber dein Vor- und Nachname angezeigt.</string>
+
+    <!-- Venues -->
+    <string name="venue_heading">@string/dummy_heading</string>
+    <string name="venue_description">Du bist eingecheckt!\n\nCheck-in:\n<xliff:g example="18.08.2020 – 19:23" id="time">%1$s</xliff:g> Uhr</string>
+    <string name="venue_current_stay_timer_heading">Aktueller Aufenthalt</string>
+
+    <string name="venue_check_in_action">EINCHECKEN</string>
+    <string name="venue_check_out_action">AUSCHECKEN</string>
+    <string name="venue_checked_in_time_format">dd.MM.yyyy HH:mm</string>
+    <string name="venue_checked_in_time">Eingecheckt seit:\n<xliff:g example="18.08.2020 – 19:23" id="time">%1$s</xliff:g> Uhr</string>
+    <string name="venue_automatic_check_out">Automatisch auschecken</string>
+
+    <string name="venue_check_out_error">Auschecken fehlgeschlagen</string>
+    <string name="venue_check_out_error_permission">Eine benötigte Berechtigung wurde nicht erteilt.</string>
+    <string name="venue_check_out_error_duration">Du wurdest eben erst eingecheckt. Bitte checke erst aus, wenn du die Location verlassen hast.</string>
+    <string name="venue_check_out_error_in_range">Du scheinst noch bei der Location zu sein. Bitte checke erst aus, wenn du die Location verlassen hast.</string>
+    <string name="venue_check_out_error_location_unavailable">Wir können deinen Standort nicht verifizieren. Bitte aktiviere die Standortdienste.</string>
+    <string name="venue_check_out_error_generic">Du konntest nicht ausgecheckt werden. Bitte prüfe deine Internetverbindung.</string>
+
+    <string name="auto_checkout_info_title">Automatischer Check-out</string>
+    <string name="auto_checkout_info_description">Wenn du diese Funktion aktivierst, wirst du automatisch ausgecheckt, sobald du den Standort verlässt, bei dem du gerade eingecheckt bist.\n\nDazu muss luca auf deinen Standort zugreifen können. Sobald du ausgecheckt wirst, die Standortdienste deaktivierst oder dein Handy neu startest, wird diese Funktion deaktiviert.</string>
+    <string name="auto_checkout_location_access_title">Standortzugriff aktivieren</string>
+    <string name="auto_checkout_location_access_description">Für die Funktion des automatischen Check-outs muss luca auf deinen Standort zugreifen können solange du eingecheckt bist - auch dann, wenn die App geschlossen ist. Deine Standortdaten werden nicht gespeichert.</string>
+    <string name="auto_checkout_background_location_access_title">@string/auto_checkout_location_access_title</string>
+    <string name="auto_checkout_background_location_access_description">Für die Funktion des automatischen Check-outs muss luca auf deinen Standort zugreifen können solange du eingecheckt bist, selbst wenn die App geschlossen ist. Aktiviere dafür bitte die folgende Option: <xliff:g example="Allow all the time" id="locationPermissionOption">%1$s</xliff:g></string>
+    <string name="auto_checkout_enable_location_title">Standortdienste aktivieren</string>
+    <string name="auto_checkout_enable_location_description">Bitte aktiviere die Standortdienste, um diese Funktion nutzen zu können.</string>
+    <string name="auto_checkout_location_disabled_title">Automatischer Check-out deaktiviert</string>
+    <string name="auto_checkout_location_disabled_description">Der automatische Check-out ist nicht mehr möglich, da die Standortdienste deaktiviert wurden.</string>
+    <string name="auto_checkout_generic_error_title">Automatischer Check-out Fehler</string>
+    <string name="auto_checkout_generic_error_description">Der automatische Check-out konnte nicht aktiviert werden.</string>
+
+    <!-- History -->
+    <string name="history_empty_title">Keine Einträge</string>
+    <string name="history_empty_description">Deine Historie sammelt alle Aktivitäten der letzten 14&#160;Tage. Im Moment hast du keine Einträge aus diesem Zeitraum.</string>
+    <string name="history_requests"><xliff:g example="0" id="count">%1$d</xliff:g> Datenzugriffe</string>
+    <string name="history_time"><xliff:g example="18.08.2020 – 19:23" id="time">%1$s</xliff:g> Uhr</string>
+    <string name="history_share">Daten freigeben</string>
+    <string name="history_share_confirmation_title">@string/history_share</string>
+    <string name="history_share_confirmation_description">Möchtest du deine Historie der letzten 14&#160;Tage und deine Kontaktdaten für das Gesundheitsamt freigeben?</string>
+    <string name="history_share_confirmation_action">Freigeben</string>
+    <string name="history_share_tan_title">@string/history_share</string>
+    <string name="history_share_tan_description">Bitte gib die folgende TAN an, sobald du vom Gesundheitsamt darum gebeten wirst:\n\n<xliff:g example="VU5S-86V6-H8FV" id="tan">%1$s</xliff:g></string>
+    <string name="history_contact_data_update_title">Kontaktdaten aktualisiert</string>
+    <string name="history_contact_data_update_description"><xliff:g example="John Doe" id="userName">%1$s</xliff:g></string>
+    <string name="history_check_in_title">Check-In</string>
+    <string name="history_check_in_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="history_check_out_title">Check-Out</string>
+    <string name="history_check_out_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="history_meeting_started_title">@string/history_meeting_ended_title</string>
+    <string name="history_meeting_ended_title">Privates Treffen</string>
+    <string name="history_meeting_ended_description"><xliff:g example="- John Doe\n- Jane Doe" id="members">%1$s</xliff:g></string>
+    <string name="history_meeting_not_empty_description">Gäste: <xliff:g example="3" id="guestsCount">%1$d</xliff:g></string>
+    <string name="history_meeting_empty_description">Kein Gast wurde eingecheckt</string>
+    <string name="history_data_cleared_title">Historie geleert</string>
+    <string name="history_data_cleared_description">Alle Einträge wurden von diesem Gerät entfernt.</string>
+    <string name="history_data_accessed_details">Im Rahmen einer Kontaktnachverfolgung wurden die Daten dieses Check-Ins von einem Gesundheitsamt entschlüsselt.</string>
+    <string name="history_data_shared_title">Daten freigegeben</string>
+    <string name="history_data_shared_description">Du hast deine Kontaktdaten und Historie der letzten 14&#160;Tage für das Gesundheitsamt freigegeben.</string>
+    <string name="history_clear_title">Möchtest du deine Historie wirklich leeren?</string>
+    <string name="history_clear_description">Vergangene Einträge werden in deiner App nicht mehr angezeigt, bleiben aber noch bis zu 30&#160;Tage im System und werden bei einer Datenfreigabe mit dem Gesundheitsamt geteilt.</string>
+    <string name="history_clear_action">Leeren</string>
+
+    <!-- Accessed Data -->
+    <string name="accessed_data_heading">Datenanfragen</string>
+    <string name="accessed_data_empty_title">@string/history_empty_title</string>
+    <string name="accessed_data_empty_description">Keine Datenanfragen durch Gesundheitsämter innerhalb der letzten 14&#160;Tage.</string>
+    <string name="accessed_data_title"><xliff:g example="Health department Berlin Mitte" id="healthDepartmentName">%1$s</xliff:g></string>
+    <string name="accessed_data_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="accessed_data_dialog_title">Neue Datenanfrage</string>
+    <string name="accessed_data_dialog_description">Ein Gesundheitsamt hat im Rahmen einer Datenanfrage Zugriff auf deine Kontaktdaten erhalten.\n\nIm Rahmen einer Kontaktnachverfolgung wurden deine Kontaktdaten von einem Gesundheitsamt entschlüsselt. Das Gesundheitsamt wertet gerade aus, ob ein Risiko besteht und wird sich möglicherweise bei dir melden. Bis dahin besteht kein Handlungsbedarf.\n\nBitte handle verantwortungsvoll.</string>
+    <string name="accessed_data_dialog_action_show">Alle Datenzugriffe</string>
+    <string name="accessed_data_dialog_action_dismiss">@string/action_ok</string>
+
+    <!-- Phone Number Verification -->
+    <string name="verification_request_new_tan_action">TAN anfordern</string>
+    <string name="verification_explanation_title">Nummer bestätigen</string>
+    <string name="verification_explanation_sms_description">An die Nummer, die du angegeben hast, schicken wir dir im nächsten Schritt zur Verifizierung eine SMS mit einer TAN. Bitte überprüfe, ob diese Nummer korrekt ist:\n\n<b><xliff:g example="+4917600000000" id="phoneNumber">%1$s</xliff:g></b>\n\nBitte beachte: Wenn keine Ländervorwahl angegeben wurde, nutzen wir die Deutsche Ländervorwahl (+49).\n\nDu wirst gebeten die TAN einzugeben, wenn du fortfährst.</string>
+    <string name="verification_explanation_landline_description">Du wirst im nächsten Schritt angerufen und erhältst durch eine Ansage deine TAN für die Verifizierung dieser Telefonnummer. Stelle sicher, dass das Telefon in deiner Nähe ist und überprüfe, ob diese Nummer korrekt ist:\n\n<b><xliff:g example="+4917600000000" id="phoneNumber">%1$s</xliff:g></b>\n\nDu wirst im nächsten Schritt angerufen und erhältst durch eine Ansage deine TAN für die Verifizierung dieser Telefonnummer.</string>
+    <string name="verification_enter_tan_title">@string/verification_explanation_title</string>
+    <string name="verification_enter_tan_description">Wir haben dir eine Nachricht mit einer TAN geschickt. Gib die TAN hier ein, um deine Telefonnummer zu bestätigen.</string>
+    <string name="verification_enter_tan_error">Die eingegebene TAN war nicht korrekt. Bitte versuche es erneut.</string>
+    <string name="verification_tan_delayed_action">Ich habe keine TAN erhalten</string>
+    <string name="verification_tan_delayed_title">@string/verification_explanation_title</string>
+    <string name="verification_tan_delayed_description">Es kann ein paar Minuten dauern, bis die TAN ankommt. Warte einen Moment, bevor du eine neue anforderst. Wenn du innerhalb der nächsten Minuten keine SMS bekommst, dann überprüfe zunächst, ob du die Nummer richtig eingegeben hast und versuche es dann noch einmal.</string>
+    <string name="verification_timeout_error_title">TAN schon angefragt</string>
+    <string name="verification_timeout_error_description">Du hast vor Kurzem eine TAN angefragt. Bitte warte einen Moment. Wenn nichts passiert, kannst du nach Ablauf der Zeit einen neuen Versuch starten:\n<xliff:g example="1 minute" id="timeoutDuration">%1$s</xliff:g></string>
+    <string name="verification_timeout_action_use_last">Vorherige TAN eingeben</string>
+    <string name="verification_rate_limit_title">Anfragelimit erreicht</string>
+    <string name="verification_rate_limit_description">In diesem Netzwerk wurde das Limit der zulässigen TAN-Anfragen erreicht. Teste bitte, ob du das Netzwerk wechseln kannst. Versuche es sonst zu einem späteren Zeitpunkt erneut.</string>
+
+    <!-- Update -->
+    <string name="update_required_title">Update benötigt</string>
+    <string name="update_required_description">Deine luca App ist veraltet, bitte installiere die aktuelle Version.</string>
+
+    <!-- Time -->
+    <string name="time_seconds">Sekunden</string>
+    <string name="time_minutes">Minuten</string>
+    <string name="time_hours">Stunden</string>
+    <string name="time_days">Tage</string>
+
+</resources>

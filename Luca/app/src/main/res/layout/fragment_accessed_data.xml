@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="de.culture4life.luca.ui.history.HistoryFragment">
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/HeadingTextView"
+            android:text="@string/accessed_data_heading"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/menuImageView"
+            android:visibility="gone"
+            style="@style/MenuImageView"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/headingSeparatorView"
+            style="@style/HeaderSeparatorView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/emptyTitleTextView"
+            style="@style/EmptyStateTitleTextView"
+            android:text="@string/accessed_data_empty_title"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/emptyDescriptionTextView"
+            style="@style/EmptyStateDescriptionTextView"
+            android:text="@string/accessed_data_empty_description"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/emptyImageView"
+            style="@style/EmptyStateImageView"
+            tools:ignore="MissingConstraints" />
+
+    <ListView
+            android:id="@+id/accessedDataListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@null"
+            android:fadingEdgeLength="@dimen/spacing_large"
+            android:listSelector="@android:color/transparent"
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headingSeparatorView"
+            tools:listitem="@layout/accessed_data_list_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

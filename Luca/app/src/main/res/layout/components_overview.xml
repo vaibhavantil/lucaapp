@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="HardcodedText"
+        tools:context=".ui.MainActivity">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_default">
+
+            <TextView
+                    style="@style/TextAppearance.App.Headline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:text="@string/dummy_heading" />
+
+            <TextView
+                    style="@style/TextAppearance.App.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:text="@string/dummy_sentence" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.App.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:hint="Outlined without text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.App.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:hint="Outlined with existing texts">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_sentence" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.App.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:hint="Filled without text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.App.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/spacing_default"
+                    android:hint="Filled with existing text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                        style="@style/Widget.App.TextInputEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dummy_sentence" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.App.Button.UnelevatedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dummy_heading" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/checked_in_light_green_gradient"
+        tools:context="de.culture4life.luca.ui.history.HistoryFragment">
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/HeadingTextView"
+            android:textColor="@android:color/black"
+            android:text="@string/venue_heading"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/headingSeparatorView"
+            style="@style/HeaderSeparatorView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/subHeadingTextView"
+            style="@style/SubHeadingTextView"
+            android:textColor="@android:color/black"
+            android:text="@string/venue_description"
+            app:layout_constraintBottom_toTopOf="@+id/checkInDurationHeadingTextView"
+            app:layout_constraintTop_toBottomOf="@id/headingSeparatorView"
+            app:layout_constraintVertical_bias="0"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/checkInDurationHeadingTextView"
+            style="@style/TextAppearance.App.Body1"
+            android:textColor="@android:color/black"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/spacing_default"
+            android:layout_marginEnd="@dimen/spacing_default"
+            android:gravity="center"
+            android:text="@string/venue_current_stay_timer_heading"
+            app:layout_constraintBottom_toTopOf="@id/checkInDurationTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+            android:id="@+id/checkInDurationTextView"
+            style="@style/TextAppearance.App.Body1"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_default"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="00:00:00"
+            android:textSize="@dimen/font_size_xlarge"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@id/slideToActView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subHeadingTextView"
+            tools:ignore="HardcodedText" />
+
+    <TextView
+            android:id="@+id/automaticCheckOutTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/venue_automatic_check_out"
+            android:layout_marginEnd="48dp"
+            android:textColor="@android:color/black"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/automaticCheckoutToggle"
+            app:layout_constraintBottom_toBottomOf="@id/automaticCheckoutToggle"
+            app:layout_constraintEnd_toStartOf="@id/automaticCheckoutToggle"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/slideToActView" />
+
+    <ImageView
+            android:src="@drawable/ic_information_outline"
+            android:id="@+id/automaticCheckoutInfoImageView"
+            android:layout_marginStart="@dimen/spacing_default"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:alpha="0.5"
+            android:scaleType="fitCenter"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/automaticCheckoutToggle"
+            app:layout_constraintBottom_toBottomOf="@id/automaticCheckoutToggle"
+            app:layout_constraintStart_toEndOf="@id/automaticCheckOutTextView" />
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/automaticCheckoutToggle"
+            style="Widget.AppCompat.CompoundButton.Switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:layout_marginBottom="32dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@id/slideToActView"
+            app:layout_constraintEnd_toEndOf="@id/slideToActView"
+            app:trackTint="@drawable/selector_switch_track"
+            app:thumbTint="@drawable/selector_switch_thumb"
+            app:switchPadding="@dimen/spacing_large" />
+
+    <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/slideToActView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_large"
+            app:bump_vibration="50"
+            app:complete_icon="@drawable/ic_sync"
+            app:inner_color="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:outer_color="@android:color/white"
+            app:text="@string/venue_check_in_action"
+            app:text_appearance="@style/TextAppearance.App.SlideToActView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "de.culture4life.luca.debug",
+  "variantName": "debug",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 3,
+      "versionName": "0.3.0 Debug",
+      "enabled": true,
+      "outputFile": "app-debug.apk"
+    }
+  ]
+}

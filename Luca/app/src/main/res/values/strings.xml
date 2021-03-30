@@ -1,0 +1,261 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name" translatable="false">luca</string>
+    <string name="unknown">Unknown</string>
+    <string name="feature_unavailable">Available soon</string>
+    <string name="url_terms_and_conditions">https://luca-app.de/app-terms-and-conditions</string>
+    <string name="url_privacy_policy">https://luca-app.de/app-privacy-policy</string>
+    <string name="url_imprint">https://luca-app.de/imprint</string>
+
+    <!-- Actions -->
+    <string name="action_ok">@android:string/ok</string>
+    <string name="action_cancel">@android:string/cancel</string>
+    <string name="action_yes">@android:string/yes</string>
+    <string name="action_no">@android:string/no</string>
+    <string name="action_no_thanks">No thanks</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_retry">Retry</string>
+    <string name="action_resolve">Resolve</string>
+    <string name="action_continue">Continue</string>
+    <string name="action_finish">Finish</string>
+    <string name="action_grant">Grant</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_send">Send</string>
+    <string name="action_confirm">Confirm</string>
+    <string name="action_update">Update</string>
+    <string name="action_enable">Enable</string>
+
+    <!-- Errors -->
+    <string name="error_generic_title">Something went wrong</string>
+    <string name="error_generic_description">An unexpected error occurred. Please get in touch if this issue persists.</string>
+    <string name="error_specific_title">Error: <xliff:g example="HttpException" id="exceptionType">%1$s</xliff:g></string>
+    <string name="error_specific_description">An unexpected error occurred:\n\n<xliff:g example="Request not authorized, status code 401" id="exceptionMessage">%1$s</xliff:g>\n\nPlease get in touch if this issue persists.</string>
+    <string name="error_request_failed_title">Request failed</string>
+    <string name="error_no_network_connection">No network connection</string>
+    <string name="error_check_in_failed">Check-in failed</string>
+    <string name="error_location_not_found">It is not possible to check in here any more.</string>
+    <string name="error_qr_code_broken">QR-Code is invalid. Please try a different one.</string>
+    <string name="error_certificate_pinning_title">Unexpected server certificates</string>
+    <string name="error_certificate_pinning_description">When attempting to establish a secure connection to the luca servers, we found untrusted certificates.\n\nPlease try switching your network and make sure that you\'re using the latest app version.</string>
+
+    <!-- Statuses -->
+    <string name="status_check_out_in_progress">Checking out…</string>
+    <string name="status_check_out_succeeded">Checked out</string>
+    <string name="status_check_out_failed">Checkout failed</string>
+
+    <!-- Notifications -->
+    <string name="notification_channel_status_title">Status</string>
+    <string name="notification_channel_status_description">Indicates that luca is running.</string>
+    <string name="notification_channel_access_title">Data accesses</string>
+    <string name="notification_channel_access_description">Informs you if a health department has accessed check-ins related to you.</string>
+    <string name="notification_channel_event_title">Information</string>
+    <string name="notification_channel_event_description">Informs you about events that happened within luca.</string>
+    <string name="notification_service_title">Checked in</string>
+    <string name="notification_service_description">@string/notification_checked_in_at_description</string>
+    <string name="notification_error_title">luca encountered a problem</string>
+    <string name="notification_checked_in_at_title">Checked in at <xliff:g example="neXenio" id="companyName">%1$s</xliff:g></string>
+    <string name="notification_checked_in_at_description">You\'re currently checked in. Please remember to check out when leaving the location.</string>
+    <string name="notification_meeting_host_title">Private meeting</string>
+    <string name="notification_meeting_host_description">You\'re currently hosting a private meeting. Please end it as soon as your guests left.</string>
+    <string name="notification_service_error_title">luca is having issues</string>
+    <string name="notification_data_accessed_title">@string/accessed_data_dialog_title</string>
+    <string name="notification_data_accessed_description">A health department has requested your contact data.</string>
+    <string name="notification_auto_checkout_triggered_title">@string/auto_checkout_info_title</string>
+    <string name="notification_auto_checkout_triggered_description">You\'ve left the location and have been checked out automatically.</string>
+    <string name="notification_action_stop_service">Stop service</string>
+    <string name="notification_action_check_out">Check out</string>
+    <string name="notification_action_end_meeting">@string/meeting_end_action</string>
+
+    <!-- Welcome -->
+    <string name="welcome_app_slogan">Experience life together.</string>
+    <string name="welcome_heading">Hello</string>
+    <string name="welcome_description">luca helps you encrypt and securely submit your contact data. With luca, you don\'t have to worry about your data when visiting events, restaurants, cafés or bars anymore.</string>
+    <string name="welcome_terms_description">Accept <a href="https://luca-app.de/app-terms-and-conditions">terms of use</a></string>
+    <string name="welcome_privacy_description">Accept <a href="https://luca-app.de/app-privacy-policy">privacy policy</a></string>
+    <string name="welcome_action">Get started!</string>
+
+    <!-- Pre-Registration -->
+    <string name="pre_registration_heading">Your contact data</string>
+    <string name="pre_registration_description">Please enter your contact data in the next step.\n\nYour data will be encrypted. Only a health department can decrypt it during contact tracing.</string>
+
+    <!-- Permissions -->
+    <string name="missing_permission_arg">Missing %1$s Permission</string>
+    <string name="permission_name_location">Location</string>
+
+    <!-- Registration -->
+    <string name="registration_first_name">First name</string>
+    <string name="registration_last_name">Last name</string>
+    <string name="registration_street">Street</string>
+    <string name="registration_house_number">Number</string>
+    <string name="registration_postal_code">Postal code</string>
+    <string name="registration_city_name">City</string>
+    <string name="registration_phone_number">Phone number</string>
+    <string name="registration_email">Email (optional)</string>
+    <string name="registration_heading_name">What\'s your name?</string>
+    <string name="registration_heading_address">Where do you live?</string>
+    <string name="registration_heading_contact">How can you be contacted?</string>
+    <string name="registration_missing_info">Info missing</string>
+    <string name="registration_missing_fields_error_text">Please provide your name, phone number and address.</string>
+    <string name="registration_invalid_value_field_error">This value is not valid</string>
+    <string name="registration_empty_but_required_field_error">This field is required</string>
+    <string name="registration_address_mandatory">Hosts must collect the addresses of their guests. Therefore, in order to use luca, it\'s mandatory to enter your address.</string>
+    <string name="registration_contact_info">Please provide a correct mobile or landline number. This number will be used for verification. You can choose if you want to provide an email address.</string>
+    <string name="registration_address_info">Hosts usually have to collect the addresses of their guests. Therefore, in order to use luca, it\'s mandatory to provide your address.</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_info_heading">Your contact data</string>
+    <string name="onboarding_info_description">Please enter your contact data in the next step.\n\nYour data will be encrypted. Only health departments can decrypt it.</string>
+    <string name="onboarding_info_action">Got it</string>
+    <string name="onboarding_completed_heading">That\'s it!</string>
+    <string name="onboarding_completed_description">You can now share your encrypted contact data by presenting your QR code or by scanning a code from a place that uses luca.\n\nChecking in is possible at places that use luca or private meetings with other luca App users.</string>
+    <string name="onboarding_completed_action">Done</string>
+
+    <!-- Navigation -->
+    <string name="navigation_check_in">Check-In</string>
+    <string name="navigation_contact_data">Contact data</string>
+    <string name="navigation_venue_list">Venues</string>
+    <string name="navigation_venue_details">@string/navigation_venue_list</string>
+    <string name="navigation_history">History</string>
+    <string name="navigation_meeting">@string/meeting_heading</string>
+    <string name="navigation_accessed_data">@string/accessed_data_heading</string>
+
+    <!-- Menu -->
+    <string name="menu_contact_data">Edit Contact Data</string>
+    <string name="menu_clear_history">Clear History</string>
+    <string name="menu_privacy_policy">Privacy Policy</string>
+    <string name="menu_terms_and_conditions">Terms &amp; Conditions</string>
+    <string name="menu_imprint">Imprint</string>
+    <string name="menu_app_data">Show App Data</string>
+
+    <!-- Contact Data -->
+    <string name="qr_code_description">This is your QR code. For check-in, have it scanned at a place that uses luca.</string>
+    <string name="scan_qr_code">Self check-in</string>
+    <string name="show_qr_code">Show QR code</string>
+    <string name="edit_contact_data">Edit contact data</string>
+
+    <!-- Private Meeting -->
+    <string name="meeting_heading">Private Meeting</string>
+    <string name="meeting_description">Let your guests scan the QR code to check into your meeting.</string>
+    <string name="meeting_description_info">When friends and family check into your private meeting, their first and last names will be shown in your app.\n\nThey will also see your first and last name in their app.\n\nYou can already use this feature at locations that are not part of the luca system to keep track of private meetings yourself.</string>
+    <string name="meeting_duration_heading">Duration</string>
+    <string name="meeting_members_heading">Participants</string>
+    <string name="meeting_members_info"><xliff:g example="2/4" id="count">%1$s</xliff:g>\n\nChecked in:\n<xliff:g example="- John Doe\n- Jane Doe" id="checkedIn">%2$s</xliff:g>\n\nChecked out:\n<xliff:g example="- John Doe\n- Jane Doe" id="checkedOut">%3$s</xliff:g></string>
+    <string name="meeting_create_action">Create a private meeting</string>
+    <string name="meeting_create_modal_action">Start</string>
+    <string name="meeting_create_modal_heading">Set up a private meeting</string>
+    <string name="meeting_create_modal_description">Do you want to start a private meeting now?\n\nWhen friends and family check into your private meeting, their first and last names will be shown in your history. They will also see your first and last name in their app.</string>
+    <string name="meeting_end_confirmation_heading">@string/meeting_end_action</string>
+    <string name="meeting_end_confirmation_description">Do you really want to end this meeting?</string>
+    <string name="meeting_end_action">End meeting</string>
+    <string name="meeting_slider_text">END MEETING</string>
+
+    <string name="meeting_join_heading">@string/meeting_heading</string>
+    <string name="meeting_join_description">When you check yourself in at a private meeting, your host can see your first and last name.</string>
+
+    <!-- Venues -->
+    <string name="venue_heading">@string/dummy_heading</string>
+    <string name="venue_description">You\'re checked in!\n\nCheck-in:\n<xliff:g example="18.08.2020 – 7:23 PM" id="time">%1$s</xliff:g></string>
+    <string name="venue_current_stay_timer_heading">Current stay</string>
+
+    <string name="venue_check_in_action">CHECK IN</string>
+    <string name="venue_check_out_action">CHECK OUT</string>
+    <string name="venue_checked_in_time_format">dd.MM.yyyy h:mm a</string>
+    <string name="venue_checked_in_time">Check in:\n<xliff:g example="18.08.2020 – 7:23 PM" id="time">%1$s</xliff:g></string>
+    <string name="venue_automatic_check_out">Automatic Check-Out</string>
+
+    <string name="venue_check_out_error">Checkout failed</string>
+    <string name="venue_check_out_error_permission">A required permission has not been granted.</string>
+    <string name="venue_check_out_error_duration">You just checked in a moment ago. Please don\'t check out before actually leaving the venue.</string>
+    <string name="venue_check_out_error_in_range">You seem to still be at the venue. Please don\'t check out before actually leaving the venue.</string>
+    <string name="venue_check_out_error_location_unavailable">We can\'t verify your current location. Please make sure that location services are turned on.</string>
+    <string name="venue_check_out_error_generic">Unable to check you out right now. Please make sure that you are connected to the internet.</string>
+
+    <string name="auto_checkout_info_title">Automatic check-out</string>
+    <string name="auto_checkout_info_description">Activating this feature will check you out automatically as soon as you leave the location you\'re currently checked in at.\n\nLuca needs to have access to your location for this to work. Checking out, disabling location services or restarting your device will disable this feature.</string>
+    <string name="auto_checkout_location_access_title">Enable location access</string>
+    <string name="auto_checkout_location_access_description">For the automatic check-out feature, luca needs to have access to your location while you\'re checked in, even when the app is closed. Your location data will not be stored.</string>
+    <string name="auto_checkout_background_location_access_title">@string/auto_checkout_location_access_title</string>
+    <string name="auto_checkout_background_location_access_description">For the automatic check-out feature, luca needs to have access to your location while you\'re checked in, even when the app is closed. Please select the following option: <xliff:g example="Allow all the time" id="locationPermissionOption">%1$s</xliff:g></string>
+    <string name="auto_checkout_enable_location_title">Enable location services</string>
+    <string name="auto_checkout_enable_location_description">Please activate your location services to use this feature.</string>
+    <string name="auto_checkout_location_disabled_title">Automatic check-out disabled</string>
+    <string name="auto_checkout_location_disabled_description">Automatic check-out is not possible anymore because your location services have been disabled.</string>
+    <string name="auto_checkout_generic_error_title">Automatic check-out error</string>
+    <string name="auto_checkout_generic_error_description">Unable to activate automatic check-out.</string>
+
+    <!-- History -->
+    <string name="history_empty_title">No entries</string>
+    <string name="history_empty_description">Your history collects all your activities from the last 14&#160;days. You don\'t have any entries during this period at the moment.</string>
+    <string name="history_requests"><xliff:g example="0" id="count">%1$d</xliff:g> data requests</string>
+    <string name="history_time"><xliff:g example="18.08.2020 – 19:23" id="time">%1$s</xliff:g></string>
+    <string name="history_time_merged" translatable="false"><xliff:g example="18.08.2020 – 19:23" id="startTime">%1$s</xliff:g> -\n<xliff:g example="18.08.2020 – 20:11" id="endTime">%2$s</xliff:g></string>
+    <string name="history_share">Share data</string>
+    <string name="history_share_confirmation_title">@string/history_share</string>
+    <string name="history_share_confirmation_description">Would you like to share your contact data and the last 14&#160;days of your history with the health department?</string>
+    <string name="history_share_confirmation_action">Share</string>
+    <string name="history_share_tan_title">@string/history_share</string>
+    <string name="history_share_tan_description">Please provide this TAN as soon as the health department asks you for it:\n\n<xliff:g example="VU5S-86V6-H8FV" id="tan">%1$s</xliff:g> </string>
+    <string name="history_contact_data_update_title">Contact data updated</string>
+    <string name="history_contact_data_update_description"><xliff:g example="John Doe" id="userName">%1$s</xliff:g></string>
+    <string name="history_check_in_title">Check-In</string>
+    <string name="history_check_in_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="history_check_out_title">Check-Out</string>
+    <string name="history_check_out_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="history_meeting_started_title">@string/history_meeting_ended_title</string>
+    <string name="history_meeting_ended_title">Private meeting</string>
+    <string name="history_meeting_ended_description"><xliff:g example="- John Doe\n- Jane Doe" id="members">%1$s</xliff:g></string>
+    <string name="history_meeting_not_empty_description">Guests: <xliff:g example="3" id="guestsCount">%1$d</xliff:g></string>
+    <string name="history_meeting_empty_description">No guests checked in</string>
+    <string name="history_data_cleared_title">History cleared</string>
+    <string name="history_data_cleared_description">All entries have been removed from this device.</string>
+    <string name="history_data_accessed_details">While contact tracing, a health department has accessed the data from this check-in.</string>
+    <string name="history_data_shared_title">Data shared</string>
+    <string name="history_data_shared_description">You released your contact data and the last 14&#160;days of your history for the health authorities.</string>
+    <string name="history_clear_title">Do you really want to clear your history?</string>
+    <string name="history_clear_description">Past entries won\'t be displayed in your app anymore, but will stay in the system for up to 30&#160;days and will be shared with the health authorities if you share your data.</string>
+    <string name="history_clear_action">Clear</string>
+
+    <!-- Accessed Data -->
+    <string name="accessed_data_heading">Data requests</string>
+    <string name="accessed_data_empty_title">@string/history_empty_title</string>
+    <string name="accessed_data_empty_description">No data requests from health departments in the last 14&#160;days.</string>
+    <string name="accessed_data_title"><xliff:g example="Health department Berlin Mitte" id="healthDepartmentName">%1$s</xliff:g></string>
+    <string name="accessed_data_description"><xliff:g example="neXenio Office" id="locationName">%1$s</xliff:g></string>
+    <string name="accessed_data_time" translatable="false"><xliff:g example="18.08.2020 – 19:23" id="startTime">%1$s</xliff:g> -\n<xliff:g example="18.08.2020 – 20:11" id="endTime">%2$s</xliff:g></string>
+    <string name="accessed_data_dialog_title">New data request</string>
+    <string name="accessed_data_dialog_description">A health department has requested your contact details.\n\nWhile contact tracing, a health department decrypted your contact details. The health department is currently evaluating whether there is a risk and will contact you.\n\nPlease act responsibly.</string>
+    <string name="accessed_data_dialog_action_show">Show details</string>
+    <string name="accessed_data_dialog_action_dismiss">@string/action_ok</string>
+
+    <!-- Phone Number Verification -->
+    <string name="verification_request_new_tan_action">Request new TAN</string>
+    <string name="verification_explanation_title">Verify phone number</string>
+    <string name="verification_explanation_sms_description">To verify your phone number we will send a TAN to the number you provided in the next step. Please make sure this number is correct:\n\n<b><xliff:g example="+4917600000000" id="phoneNumber">%1$s</xliff:g></b></string>
+    <string name="verification_explanation_landline_description">You will receive a call with a message containing the TAN that is needed to verify your phone number in the next step. Please make sure the phone is nearby and the number is correct:\n\n<b><xliff:g example="+4917600000000" id="phoneNumber">%1$s</xliff:g></b></string>
+    <string name="verification_enter_tan_title">@string/verification_explanation_title</string>
+    <string name="verification_enter_tan_description">We\'ve sent you a message with a TAN. Please enter the TAN here to verify your phone number.</string>
+    <string name="verification_enter_tan_error">The TAN you entered was incorrect. Please try again.</string>
+    <string name="verification_tan_delayed_action">I didn\'t get a TAN</string>
+    <string name="verification_tan_delayed_title">@string/verification_explanation_title</string>
+    <string name="verification_tan_delayed_description">It can take a few minutes for the TAN to arrive. Please wait a moment before you request another TAN. If nothing happens after a few minutes, please check if you\'ve provided the correct number and try again.</string>
+    <string name="verification_timeout_error_title">TAN already requested</string>
+    <string name="verification_timeout_error_description">You have recently requested a TAN. Please wait a moment. If nothing happens, you can try again in:\n<xliff:g example="1 minute" id="timeoutDuration">%1$s</xliff:g></string>
+    <string name="verification_timeout_action_use_last">Enter last TAN</string>
+    <string name="verification_rate_limit_title">Rate limit exceeded</string>
+    <string name="verification_rate_limit_description">This network\'s TAN request limit has been reached. Please try to switch your network or try again at a later time.</string>
+
+    <!-- Update -->
+    <string name="update_required_title">Update required</string>
+    <string name="update_required_description">The luca app that you are currently using is outdated, please install the latest version.</string>
+
+    <!-- Time -->
+    <string name="time_seconds">seconds</string>
+    <string name="time_minutes">minutes</string>
+    <string name="time_hours">hours</string>
+    <string name="time_days">days</string>
+
+    <!-- Dummy Data -->
+    <string name="dummy_heading" translatable="false">Lorem Ipsum</string>
+    <string name="dummy_sentence" translatable="false">Quisque hendrerit facilisis ultricies, fusce a convallis.</string>
+    <string name="dummy_paragraph" translatable="false">Curabitur tincidunt in lectus at scelerisque. Nunc arcu lectus, lobortis ut aliquam ac, accumsan nec risus. Quisque hendrerit facilisis ultricies. Fusce a convallis lacus.</string>
+
+</resources>

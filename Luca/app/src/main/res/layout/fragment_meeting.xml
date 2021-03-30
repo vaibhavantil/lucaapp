@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/luca_light_blue"
+        tools:context="de.culture4life.luca.ui.qrcode.QrCodeFragment">
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/HeadingTextView"
+            android:textColor="@android:color/black"
+            android:text="@string/meeting_heading"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/menuImageView"
+            style="@style/MenuImageView"
+            app:tint="@android:color/black"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/headingSeparatorView"
+            style="@style/HeaderSeparatorView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/subHeadingTextView"
+            style="@style/SubHeadingTextView"
+            android:textColor="@android:color/black"
+            android:text="@string/meeting_description"
+            android:layout_marginEnd="32dp"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/infoImageView"
+            android:src="@drawable/ic_help_outline_24"
+            app:tint="@color/darkTranslucentColor"
+            android:padding="2dp"
+            android:layout_marginStart="@dimen/spacing_small"
+            android:alpha="0.5"
+            app:layout_constraintStart_toEndOf="@id/subHeadingTextView"
+            app:layout_constraintTop_toTopOf="@id/subHeadingTextView"
+            app:layout_constraintBottom_toBottomOf="@id/subHeadingTextView"
+            android:layout_width="28dp"
+            android:layout_height="0dp" />
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/qrCodeCardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            app:cardBackgroundColor="?attr/colorOnSurface"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintBottom_toTopOf="@id/durationContainer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subHeadingTextView"
+            app:layout_constraintWidth_max="@dimen/qr_card_size"
+            app:layout_constraintHeight_max="@dimen/qr_card_size">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/qrCodeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:keepScreenOn="true"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/spacing_default"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/loadingLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#CCFFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTintMode="src_atop"
+                        android:indeterminateTint="?attr/colorSurface"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/durationContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/headingTextView"
+            app:layout_constraintBottom_toTopOf="@id/slideToActView"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintEnd_toStartOf="@id/membersContainer">
+
+        <TextView
+                style="@style/TextAppearance.App.Body1"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/meeting_duration_heading"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/spacing_small"
+                app:layout_constraintBottom_toTopOf="@id/durationTextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+                android:id="@+id/durationTextView"
+                style="@style/TextAppearance.App.Body1"
+                app:fontFamily="@font/montserrat_bold"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="00:00:00"
+                android:ellipsize="end"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/membersContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/slideToActView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/durationContainer"
+            app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+                android:id="@+id/membersHeadingTextView"
+                style="@style/TextAppearance.App.Body1"
+                android:textColor="@android:color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meeting_members_heading"
+                android:ellipsize="end"
+                android:layout_marginBottom="@dimen/spacing_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/membersTextView" />
+
+        <ImageView
+                android:id="@+id/meetingMembersInfoImageView"
+                android:src="@drawable/ic_help_outline_24"
+                app:tint="@color/darkTranslucentColor"
+                android:padding="2dp"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:alpha="0.5"
+                app:layout_constraintStart_toEndOf="@id/membersHeadingTextView"
+                app:layout_constraintTop_toTopOf="@id/membersHeadingTextView"
+                app:layout_constraintBottom_toBottomOf="@id/membersHeadingTextView"
+                android:layout_width="28dp"
+                android:layout_height="28dp" />
+
+        <TextView
+                android:id="@+id/membersTextView"
+                style="@style/TextAppearance.App.Body1"
+                app:fontFamily="@font/montserrat_bold"
+                android:textColor="@android:color/black"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="1/1"
+                android:ellipsize="end"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="HardcodedText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.ncorti.slidetoact.SlideToActView
+            android:id="@+id/slideToActView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_default"
+            app:bump_vibration="50"
+            app:complete_icon="@drawable/ic_sync"
+            app:inner_color="@android:color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:outer_color="@android:color/white"
+            app:text="@string/meeting_slider_text"
+            app:text_appearance="@style/TextAppearance.App.SlideToActView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="de.culture4life.luca.ui.qrcode.QrCodeFragment">
+
+    <TextView
+            android:id="@+id/headingTextView"
+            style="@style/HeadingTextView"
+            android:text="@string/navigation_check_in"
+            tools:ignore="MissingConstraints" />
+
+    <ImageView
+            android:id="@+id/menuImageView"
+            style="@style/MenuImageView"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/headingSeparatorView"
+            style="@style/HeaderSeparatorView"
+            tools:ignore="MissingConstraints" />
+
+    <TextView
+            android:id="@+id/subHeadingTextView"
+            style="@style/SubHeadingTextView"
+            android:text="@string/qr_code_description"
+            tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/qrCodeCardView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/spacing_large"
+            android:layout_marginBottom="@dimen/spacing_large"
+            android:layout_marginStart="@dimen/spacing_large"
+            android:layout_marginEnd="@dimen/spacing_large"
+            app:cardBackgroundColor="?attr/colorOnSurface"
+            app:cardCornerRadius="8dp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintBottom_toTopOf="@id/cameraToggleButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/subHeadingTextView"
+            app:layout_constraintWidth_max="@dimen/qr_card_size"
+            app:layout_constraintHeight_max="@dimen/qr_card_size">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:id="@+id/qrCodeImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:keepScreenOn="true"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/spacing_default"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.camera.view.PreviewView
+                    android:id="@+id/cameraPreviewView"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:keepScreenOn="true"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    app:layout_constraintDimensionRatio="1:1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/loadingLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="#CCFFFFFF"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent">
+
+                <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:indeterminateTintMode="src_atop"
+                        android:indeterminateTint="?attr/colorSurface"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+            android:id="@+id/qrCodeCaptionTextView"
+            style="@style/TextAppearance.App.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_small"
+            android:gravity="center"
+            android:text="@string/unknown"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/qrCodeCardView" />
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/contactDataCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_default"
+            android:visibility="gone"
+            app:cardBackgroundColor="?attr/colorOnSurface"
+            app:cardCornerRadius="@dimen/spacing_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headingTextView"
+            tools:ignore="HardcodedText">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="24dp">
+
+            <ImageView
+                    android:id="@+id/cardMenuImageView"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_pencil"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="?attr/colorSurface"
+                    tools:ignore="MissingConstraints" />
+
+            <TextView
+                    android:id="@+id/nameTextView"
+                    style="@style/CardHeading"
+                    android:text="John Doe"
+                    app:layout_constraintEnd_toStartOf="@id/cardMenuImageView"
+                    tools:ignore="MissingConstraints" />
+
+            <ImageView
+                    android:id="@+id/addressImageView"
+                    style="@style/CardAttributeIconImageView"
+                    android:src="@drawable/ic_home"
+                    app:layout_constraintTop_toBottomOf="@id/nameTextView"
+                    tools:ignore="MissingConstraints" />
+
+            <TextView
+                    android:id="@+id/descriptionTextView"
+                    style="@style/CardAttributeTextView"
+                    android:maxLines="3"
+                    android:text="Charlottenstraße 59\n10117 Berlin"
+                    app:layout_constraintStart_toEndOf="@id/addressImageView"
+                    app:layout_constraintTop_toTopOf="@id/addressImageView" />
+
+            <ImageView
+                    android:id="@+id/phoneNumberImageView"
+                    style="@style/CardAttributeIconImageView"
+                    android:src="@drawable/ic_phone"
+                    app:layout_constraintTop_toBottomOf="@id/descriptionTextView"
+                    tools:ignore="MissingConstraints" />
+
+            <TextView
+                    android:id="@+id/phoneNumberTextView"
+                    style="@style/CardAttributeTextView"
+                    android:maxLines="3"
+                    android:text="03022183850"
+                    app:layout_constraintStart_toEndOf="@id/phoneNumberImageView"
+                    app:layout_constraintTop_toTopOf="@id/phoneNumberImageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/cameraToggleButton"
+            style="@style/PrimaryActionButton"
+            app:icon="@drawable/ic_qr_code"
+            app:layout_constraintBottom_toTopOf="@id/buttonSeparatorView"
+            android:text="@string/scan_qr_code"
+            tools:ignore="MissingConstraints" />
+
+    <View
+            android:id="@+id/buttonSeparatorView"
+            style="@style/HeaderSeparatorView"
+            android:layout_marginBottom="@dimen/spacing_default"
+            app:layout_constraintTop_toBottomOf="@null"
+            app:layout_constraintBottom_toTopOf="@id/createMeetingButton"
+            tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/createMeetingButton"
+            style="@style/SecondaryActionButton"
+            app:icon="@drawable/ic_people_outline_24"
+            android:text="@string/meeting_create_action"
+            tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <attr name="colorPrimaryLight" format="reference" />
+    <attr name="colorPrimaryTranslucent" format="reference" />
+    <attr name="colorAlmostSurface" format="reference" />
+    <attr name="colorControlDisabled" format="reference" />
+    <attr name="colorControlBackground" format="reference" />
+    <attr name="colorWarning" format="reference" />
+</resources>

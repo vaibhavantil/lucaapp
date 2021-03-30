@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainNavigation"
+        app:startDestination="@+id/qrCodeFragment">
+
+    <fragment
+            android:id="@+id/qrCodeFragment"
+            android:name="de.culture4life.luca.ui.qrcode.QrCodeFragment"
+            android:label="@string/navigation_contact_data"
+            tools:layout="@layout/fragment_qr_code">
+
+        <action
+                android:id="@+id/action_qrCodeFragment_to_venueDetailFragment"
+                app:destination="@id/venueDetailFragment" />
+
+        <action
+                android:id="@+id/action_qrCodeFragment_to_venueDetailFragmentCheckedIn"
+                app:destination="@id/venueDetailFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/mainNavigation"
+                app:popUpToInclusive="true" />
+
+        <action
+                android:id="@+id/action_qrCodeFragment_to_meetingFragment"
+                app:destination="@id/meetingFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/mainNavigation"
+                app:popUpToInclusive="true" />
+
+    </fragment>
+
+    <fragment
+            android:id="@+id/venueDetailFragment"
+            android:name="de.culture4life.luca.ui.venue.details.VenueDetailsFragment"
+            android:label="@string/navigation_venue_details"
+            tools:layout="@layout/fragment_venue_details">
+        <action
+                android:id="@+id/action_venueDetailFragment_to_qrCodeFragment"
+                app:destination="@id/qrCodeFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/mainNavigation"
+                app:popUpToInclusive="true" />
+        <action
+                android:id="@+id/action_venueDetailFragment_to_venueDetailFragmentCheckedIn"
+                app:destination="@id/venueDetailFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/mainNavigation"
+                app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/meetingFragment"
+            android:name="de.culture4life.luca.ui.meeting.MeetingFragment"
+            android:label="@string/navigation_meeting"
+            tools:layout="@layout/fragment_meeting">
+        <action
+                android:id="@+id/action_meetingFragment_to_qrCodeFragment"
+                app:destination="@id/qrCodeFragment"
+                app:launchSingleTop="true"
+                app:popUpTo="@id/mainNavigation"
+                app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/historyFragment"
+            android:name="de.culture4life.luca.ui.history.HistoryFragment"
+            android:label="@string/navigation_history"
+            tools:layout="@layout/fragment_history">
+        <action
+                android:id="@+id/action_historyFragment_to_accessedDataFragment"
+                app:destination="@id/accessedDataFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/accessedDataFragment"
+            android:name="de.culture4life.luca.ui.accesseddata.AccessedDataFragment"
+            android:label="@string/navigation_accessed_data"
+            tools:layout="@layout/fragment_accessed_data" />
+
+</navigation>

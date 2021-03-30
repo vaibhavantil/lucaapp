@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+            android:id="@+id/contactDataMenuItem"
+            android:title="@string/menu_contact_data"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/clearHistoryMenuItem"
+            android:title="@string/menu_clear_history"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/privacyPolicyMenuItem"
+            android:title="@string/menu_privacy_policy"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/termsAndConditionsMenuItem"
+            android:title="@string/menu_terms_and_conditions"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/imprintMenuItem"
+            android:title="@string/menu_imprint"
+            app:showAsAction="never" />
+
+    <item
+            android:id="@+id/appDataMenuItem"
+            android:title="@string/menu_app_data"
+            app:showAsAction="never" />
+
+</menu>
