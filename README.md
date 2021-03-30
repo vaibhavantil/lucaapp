@@ -22,10 +22,6 @@ Note that `debug` builds may behave differently than `release` builds. They will
 
 Please [create an issue](https://gitlab.com/lucaapp/android/-/issues) for suggestions or problems related to this app. For general questions, please check out our [FAQ](https://www.luca-app.de/faq/) or contact our support team at [hello@luca-app.de](mailto:hello@luca-app.de).
 
-## Contribution
-
-Placeholder for contribution guidelines.
-
 ## License
 
-Placeholder for license details.
+Limited Licence see [licence file](https://gitlab.com/lucaapp/android/-/blob/master/LICENSE)
