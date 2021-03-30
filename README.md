@@ -6,7 +6,7 @@ This repository contains the source code of the luca app for Android. Note that 
 
 ## Changelog
 
-An overview of all releases can be found [here](https://gitlab.com/lucaapp/android/-/merge_requests).
+An overview of all releases can be found [here](https://gitlab.com/lucaapp/android/-/blob/master/CHANGELOG.md).
 
 ## Development
 
