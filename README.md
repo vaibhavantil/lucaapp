@@ -24,4 +24,4 @@ Please [create an issue](https://gitlab.com/lucaapp/android/-/issues) for sugges
 
 ## License
 
-Limited Licence see [licence file](https://gitlab.com/lucaapp/android/-/blob/master/LICENSE)
+See [license file](https://gitlab.com/lucaapp/android/-/blob/master/LICENSE).
