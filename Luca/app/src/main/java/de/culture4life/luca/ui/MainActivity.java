@@ -66,13 +66,11 @@ public class MainActivity extends BaseActivity {
 
     private Completable processNotificationAction(int action) {
         return Completable.fromAction(() -> {
-            switch (action) {
-                case LucaNotificationManager.ACTION_SHOW_ACCESSED_DATA:
-                    Timber.d("Showing accessed data");
-                    navigationController.navigate(R.id.historyFragment);
-                    break;
-                default:
-                    Timber.w("Unknown notification action: %d", action);
+            if(action == LucaNotificationManager.ACTION_SHOW_ACCESSED_DATA){
+                Timber.d("Showing accessed data");
+                navigationController.navigate(R.id.historyFragment);
+            }else {
+                Timber.w("Unknown notification action: %d", action);
             }
         });
     }
