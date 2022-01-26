@@ -66,8 +66,7 @@ public class MainActivity extends BaseActivity {
 
     private Completable processNotificationAction(int action) {
         return Completable.fromAction(() -> {
-            if(action){
-                LucaNotificationManager.ACTION_SHOW_ACCESSED_DATA:
+            if(action == LucaNotificationManager.ACTION_SHOW_ACCESSED_DATA){
                 Timber.d("Showing accessed data");
                 navigationController.navigate(R.id.historyFragment);
             }else {
